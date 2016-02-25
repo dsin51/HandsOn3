@@ -6,7 +6,8 @@ function myFunction(){
 	
 	var ele = document.getElementById("name").value;
 	
-	prompt("Please Confirm your name:\n",ele);
+	var name1 = prompt("Please Confirm your name:\n",ele);
+	document.getElementById("name").value = name1;
 }
 
 function onSubmit(){
