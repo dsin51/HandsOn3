@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Place Order</title>
+<link href="styles/PlaceOrderStyles.css"  type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="scripts/PlaceOrder.js"></script>
+
+</head>
+<body>
+    <h1 align="center">Place Order</h1>
+    <form id="myform">
+    <table align="center" border="2">
+        <tr>
+            <td>Customer Name</td>
+            <td><input type="text" id="name" onblur="myFunction()" /></td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td><select id="location">
+                    <option disabled selected>--Select your Location--</option>
+                    <option value="Kashmir">Kashmir</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Calcutta">Calcutta</option>        
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Payment Mode</td>
+            <td id="paymode">
+                Net Banking	<input id="net" type="radio" name="pay" value="Net Banking" />
+                VISA		<input id="visa" type="radio" name="pay" value="VISA" />
+                Master Card	<input id="card" type="radio" name="pay" value="Master Card" />
+            </td>
+        </tr>
+        <tr>
+            <td>Choose Offer</td>
+            <td id="offer">
+                <input class="messageCheckbox" type="checkbox" name="offer" value="Coupons"/>Coupons
+                <input class="messageCheckbox" type="checkbox" name="offer" value="Movie-Tickets"/>Movie Tickets
+                <input class="messageCheckbox" type="checkbox" name="offer" value="Points"/>Points
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="reset" value="Reset">
+            </td>
+            <td>
+                <input type="button" value="Submit" onclick="onSubmit()" />
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
